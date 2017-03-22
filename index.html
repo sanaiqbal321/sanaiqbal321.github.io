@@ -3,85 +3,27 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Sanaiqbal321</title>
+	<title>fullPage.js A simple Demo</title>
 	<meta name="author" content="Alvaro Trigo Lopez" />
-	<meta name="description" content="fullPage full-screen backgrounds." />
-	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
+	<meta name="description" content="fullPage very simple demo." />
+	<meta name="keywords"  content="fullpage,jquery,demo,simple" />
 	<meta name="Resource-type" content="Document" />
 
 
-
-	<style>
-
-	
-	/* Centered texts in each section
-	* --------------------------------------- */
-	.section{
-		text-align:center;
-	}
+	<link rel="stylesheet" type="text/css" href="/fullpage-js-master/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="/fullpage-js-master.examples.css" />
 
 
-	/* Backgrounds will cover all the section
-	* --------------------------------------- */
-	.section{
-		background-size: cover;
-	}
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-	.slide{
-		background-size: cover;
-	}
-
-	/* Defining each sectino background and styles
-	* --------------------------------------- */
-	#section0{
-		background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg1.jpg);
-	}
-	#section0 h1{
-		top: 50%;
-		transform: translateY(-50%);
-		position: relative;
-	}
-	#section2{
-		background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg3.jpg);
-		padding: 6% 0 0 0;
-	}
-	#section3{
-		background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg4.jpg);
-		padding: 6% 0 0 0;
-	}
-	#section3 h1{
-		color: #000;
-	}
-
-
- 	/*Adding background for the slides
-	* --------------------------------------- */
-	#slide1{
-		background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg2.jpg);
-		padding: 6% 0 0 0;
-	}
-	#slide2{
-		background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg5.jpg);
-		padding: 6% 0 0 0;
-	}
-	</style>
-
-	<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/fullpage-js-master/vendors/scrolloverflow.js"></script>
 
 	<script type="text/javascript" src="/jquery.fullPage.js"></script>
-
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				'verticalCentered': false,
-				navigation: true
+				sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
 			});
 		});
 	</script>
@@ -89,20 +31,17 @@
 </head>
 <body>
 
-
-
-
 <div id="fullpage">
-	<div class="section " id="section0"><h1>fullPage.js</h1></div>
+	<div class="section active" id="section0"><h1>fullPage.js</h1></div>
 	<div class="section" id="section1">
-	    <div class="slide" id="slide1"><h1>Slide Backgrounds</h1></div>
-	    <div class="slide" id="slide2"><h1>Totally customizable</h1></div>
+	    <div class="slide "><h1>Simple Demo</h1></div>
+	    <div class="slide active"><h1>Only text</h1></div>
+	    <div class="slide"><h1>And text</h1></div>
+	    <div class="slide"><h1>And more text</h1></div>
 	</div>
-	<div class="section" id="section2"><h1>Lovely images <br />for a lovely page</h1></div>
-	<div class="section" id="section3"><h1>One Image = One thousand words</h1></div>
+	<div class="section" id="section2"><h1>No wraps, no extra markup</h1></div>
+	<div class="section" id="section3"><h1>Just the simplest demo ever</h1></div>
 </div>
-
-
 
 </body>
 </html>
