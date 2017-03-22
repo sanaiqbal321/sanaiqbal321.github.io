@@ -86,7 +86,7 @@ p{
 	background: rgba(0,0,0, 0.5);
 	color: #fff;
 }
-#menu li a{
+/*#menu li a{
 	text-decoration:none;
 	color: #000;
 }
@@ -103,7 +103,7 @@ p{
 }
 #menu li.active a{
 	color: #fff;
-}
+}*/
 #menu{
 	position:fixed;
 	top:0;
