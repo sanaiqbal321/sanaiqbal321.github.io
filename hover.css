@@ -1,0 +1,45 @@
+a.nice-link {
+  position: relative;
+  text-decoration: none;
+  color: #168dff;
+}
+
+a.nice-link:after {
+  text-decoration: none;
+  text-align: justify;
+  display: inline-block;
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #3fc1ff;
+  min-height: 100%;
+  width: 0;
+  max-width: 100%;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+a.nice-link:hover {
+  text-decoration: none;
+  color: #168dff;
+}
+a.nice-link:hover:after {
+  text-decoration: none;
+  width: 100%;
+}
+
+body,
+html {
+  -webkit-font-smoothing: antialiased;
+}
+::selection {
+  background: #90bbff;
+}
+::-moz-selection {
+  background: #90bbff;
+}
+
